@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Square Cipher Encryption/Decryption</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="twoSquareCipher.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Two-Square Cipher Encryption - Decryption</h1>
+       
+    </header>
+
+    
+
+    <div class="container">
+
+        <div class="message">
+            <p>
+                Welcome to the Two-Square Cipher Encryption/Decryption website! <br/> Enter your plaintext in the first box, click "Encrypt," and view the result in the encrypted result box.<br/> Have fun encrypting and decrypting your messages securely!<br/><br/>
+            </p>
+        </div>
+
+        <label for="plaintext">Enter plaintext:</label>
+        <input type="text" id="plaintext" placeholder="Enter the text you want to encrypt here!">
+        <button onclick="encryptTwoSquareCipher()">Encrypt</button>
+        <p>Encrypted Result:</p>
+        <p id="result"></p>
+
+        <hr>
+
+        <p><br/>For decryption, enter the ciphertext in the second box and click "Decrypt" to reveal the original message.<br/></p>
+
+        <label for="ciphertext">Enter ciphertext:</label>
+        <input type="text" id="ciphertext" placeholder="Enter the text you want to decrypt here">
+        <button onclick="decryptTwoSquareCipher()">Decrypt</button>
+        <p>Decrypted Result:</p>
+        <p id="decryptedResult"></p>
+    </div>
+</body>
+</html>
